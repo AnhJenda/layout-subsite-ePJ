@@ -23,6 +23,18 @@
     border: 1px solid green;
 }
 .sidebar-right {
-    background-color: lightgreen;
     margin-top: 15px;
+    border: 1px solid red;
+}
+.sidebar-item {
+    width: 90%;
+    border: 1px solid yellow;
+}
+.sidebar-item-title {
+    margin-left: 10px;
+    border-bottom: none;
+}
+.sidebar-list-item, .list-group-item {
+    border-left: none;
+    border-top: none;
 }
