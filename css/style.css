@@ -24,17 +24,20 @@
 }
 .sidebar-right {
     margin-top: 15px;
-    border: 1px solid red;
+    border: 1px solid lightgrey;
 }
 .sidebar-item {
     width: 90%;
-    border: 1px solid yellow;
+    border: 1px solid lightgrey;
 }
 .sidebar-item-title {
     margin-left: 10px;
     border-bottom: none;
 }
 .sidebar-list-item, .list-group-item {
-    border-left: none;
+    margin: 0 10px 0 10px;
+    border-bottom: 1px solid lightgrey;
     border-top: none;
+    border-left: none;
+    border-right: none;
 }
