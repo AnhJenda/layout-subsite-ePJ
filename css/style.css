@@ -1,0 +1,28 @@
+.content {
+    display: flex;
+    float: left;
+    margin-top: 15px;
+    padding: 0;
+}
+.text-content {
+    background-color: lightblue;
+    height: 500px;
+    margin-top: 15px;
+    padding: 0;
+}
+.img-content {
+    background-color: lightpink;
+    display: flex;
+    float: left;
+    height: 300px;
+    width: 100%;
+    margin-top: 15px;
+    padding: 0;
+}
+.img-item {
+    border: 1px solid green;
+}
+.sidebar-right {
+    background-color: lightgreen;
+    margin-top: 15px;
+}
