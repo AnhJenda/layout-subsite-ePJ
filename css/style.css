@@ -26,11 +26,16 @@
     margin-top: 15px;
     border: 1px solid lightgrey;
 }
+.sidebar-title {
+    margin-bottom: 20px;
+}
 .sidebar-item {
     width: 90%;
     border: 1px solid lightgrey;
+    margin: 0 auto;
 }
 .sidebar-item-title {
+    margin-top: 10px;
     margin-left: 10px;
     border-bottom: none;
 }
@@ -40,4 +45,8 @@
     border-top: none;
     border-left: none;
     border-right: none;
+}
+.item-end {
+    border: unset;
+    margin: 0 10px 0 10px;
 }
