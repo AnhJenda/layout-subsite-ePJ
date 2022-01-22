@@ -17,10 +17,11 @@
     margin-top: 15px;
     padding: 0;
 }
-.row    {
+.row {
     margin: 0;
 }
-.img-item {
+div.img-item {
+    position: relative;
     border: 1px solid green;
     margin-top: 30px;
     height: 300px;
@@ -79,4 +80,11 @@
     list-style-type: none;
     display: inline-block;
     margin-right: 5px;
+}
+div.details {
+    position: absolute;
+    display: none;
+}
+div.img-item:hover div.details {
+    display: block;
 }
