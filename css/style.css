@@ -80,6 +80,23 @@ span.onsale::after {
     height: 10%;
     border: 1px solid red;
 }
+span.before-sale {
+    text-decoration: line-through;
+    font-weight: 200;
+    float: left;
+    margin-left: 5px;
+}
+span.current-price {
+    font-weight: 700;
+    display: flex;
+    float: right;
+    margin-right: 5px;
+}
+.clearfix {
+    clear: both;
+    visibility: hidden;
+    height: 0;
+}
 .sidebar-right {
     margin-top: 15px;
     border: 1px solid lightgrey;
