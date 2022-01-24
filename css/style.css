@@ -27,9 +27,42 @@ div.img-item {
     height: 300px;
 }
 .product-img {
+    position: relative;
+    z-index: 1;
     width: 100%;
     height: 70%;
     border: 1px solid pink;
+    overflow: hidden;
+}
+span.onsale {
+    position: absolute;
+    z-index: 9;
+    transform: rotate(270deg);
+    background-color: #8dc63f;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    padding: 6px;
+    top: 4px;
+    left: -4px;
+    line-height: 1 !important;
+    min-height: 0 !important;
+    min-width: 0 !important;
+    backface-visibility: hidden;
+}
+span.onsale::after {
+    content: "";
+    position: absolute;
+    color: #8dc63f;
+    border: solid 12px transparent;
+    border-left-color: #8dc63f;
+    border-right-color: #8dc63f;
+    transform: rotate(270deg);
+    backface-visibility: hidden;
+    left: -12px;
+    top: -0.1px;
+    box-sizing: inherit;
 }
 .product-name {
     width: 100%;
@@ -85,6 +118,46 @@ div.details {
     position: absolute;
     display: none;
 }
+@-webkit-keyframes move-to-right {
+    to{
+        left: 0;position: relative;opacity: 1;
+    }
+    from{
+        left:-100px; position: relative;opacity: 1;
+    }
+}
 div.img-item:hover div.details {
     display: block;
+    animation: move-to-right 0.3s;
+}
+.ordering {
+    margin-right: 60px;
+}
+i.quick-view-icon, i.compare-icon, i.wishlist-icon {
+    display: none;
+    position: absolute;
+}
+span.icon-title {
+    display: none;
+    position: absolute;
+}
+div.img-item:hover i.quick-view-icon,
+div.img-item:hover i.compare-icon,
+div.img-item:hover i.wishlist-icon {
+    display: block;
+    animation: move-to-left 0.8s;
+}
+@-webkit-keyframes move-to-left {
+    to{
+        right: 0;position: relative;opacity: 1;
+    }
+    from{
+        right: -30px; position: relative;opacity: 1;
+    }
+}
+i.quick-view-icon:hover span.icon-title,
+i.compare-icon:hover span.icon-title,
+i.wishlist-icon:hover span.icon-title {
+    display: inline-block;
+    animation: move-to-left;
 }
