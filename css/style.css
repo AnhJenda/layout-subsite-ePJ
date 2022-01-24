@@ -11,6 +11,12 @@
     padding: 0;
     border: 1px solid lightgrey;
 }
+.image-content-wrapper {
+    margin-top: 20px;
+}
+.product-header {
+    border: 1px solid lightgrey;
+}
 .img-content {
     border: 1px solid lightgrey;
     width: 100%;
@@ -106,8 +112,10 @@ span.onsale::after {
     margin-top: 20px;
     border: 1px solid lightgrey;
 }
-.page-link {
+.page-next {
     text-align: center;
+    margin-top: 20px;
+    justify-content: space-between;
 }
 .page-number li {
     list-style-type: none;
