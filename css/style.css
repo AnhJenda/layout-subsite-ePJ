@@ -1,3 +1,4 @@
+
 .content {
     width: 100%;
     display: flex;
@@ -158,11 +159,11 @@ div.img-item:hover div.details {
 .ordering {
     margin-right: 60px;
 }
-i.quick-view-icon, i.compare-icon, i.wishlist-icon {
-    display: none;
-    position: absolute;
+div.add-to-wishlist, div.quick-view, div.compare-wrap {
+    position: relative;
+
 }
-span.icon-title {
+i.quick-view-icon, i.compare-icon, i.wishlist-icon {
     display: none;
     position: absolute;
 }
@@ -180,9 +181,6 @@ div.img-item:hover i.wishlist-icon {
         right: -30px; position: relative;opacity: 1;
     }
 }
-i.quick-view-icon:hover span.icon-title,
-i.compare-icon:hover span.icon-title,
-i.wishlist-icon:hover span.icon-title {
-    display: inline-block;
-    animation: move-to-left;
+a {
+    text-decoration: none;
 }
