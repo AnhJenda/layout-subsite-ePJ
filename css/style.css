@@ -1,4 +1,18 @@
-
+.breadcrumb-wrapper {
+    background-color: #e9ecef;
+}
+.breadcrumb-title {
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.breadcrumb {
+    text-align: center;
+    --bs-breadcrumb-divider: '>';
+    align-items: center;
+    margin: 0 auto;
+    background-color: unset;
+}
 .content {
     width: 100%;
     display: flex;
@@ -15,11 +29,7 @@
 .image-content-wrapper {
     margin-top: 20px;
 }
-.product-header {
-    border: 1px solid lightgrey;
-}
 .img-content {
-    border: 1px solid lightgrey;
     width: 100%;
     margin-top: 15px;
     padding: 0;
@@ -29,7 +39,6 @@
 }
 div.img-item {
     position: relative;
-    border: 1px solid green;
     margin-top: 30px;
     height: 300px;
 }
@@ -38,7 +47,6 @@ div.img-item {
     z-index: 1;
     width: 100%;
     height: 70%;
-    border: 1px solid pink;
     overflow: hidden;
 }
 span.onsale {
@@ -74,12 +82,10 @@ span.onsale::after {
 .product-name {
     width: 100%;
     height: 20%;
-    border: 1px solid orange;
 }
 .product-price {
     width: 100%;
     height: 10%;
-    border: 1px solid red;
 }
 span.before-sale {
     text-decoration: line-through;
@@ -104,16 +110,16 @@ span.current-price {
 }
 .sidebar-title {
     margin-bottom: 20px;
+    border-bottom: 1px solid lightgrey;
 }
 .sidebar-item {
     width: 90%;
-    border: 1px solid lightgrey;
     margin: 0 auto;
 }
 .sidebar-item-title {
     margin-top: 10px;
     margin-left: 10px;
-    border-bottom: none;
+    border-bottom: 1px solid lightgrey;
 }
 .sidebar-list-item, .list-group-item {
     margin: 0 10px 0 10px;
@@ -156,8 +162,8 @@ div.img-item:hover div.details {
     display: block;
     animation: move-to-right 0.3s;
 }
-.ordering {
-    margin-right: 60px;
+.product-now {
+    text-align: center;
 }
 div.add-to-wishlist, div.quick-view, div.compare-wrap {
     position: relative;
@@ -166,6 +172,7 @@ div.add-to-wishlist, div.quick-view, div.compare-wrap {
 i.quick-view-icon, i.compare-icon, i.wishlist-icon {
     display: none;
     position: absolute;
+    top: 20px;
 }
 div.img-item:hover i.quick-view-icon,
 div.img-item:hover i.compare-icon,
@@ -175,10 +182,14 @@ div.img-item:hover i.wishlist-icon {
 }
 @-webkit-keyframes move-to-left {
     to{
-        right: 0;position: relative;opacity: 1;
+        right: 0;
+        position: relative;
+        opacity: 1;
     }
     from{
-        right: -30px; position: relative;opacity: 1;
+        right: -30px;
+        position: relative;
+        opacity: 1;
     }
 }
 a {

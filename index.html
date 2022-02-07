@@ -20,6 +20,19 @@
 
                 <!--  Phần riêng của từng trang còn nằm ở đây. Begin  -->
     <div class="container">
+        <div class="page-top">
+            <div class="breadcrumb-wrapper">
+                <div class="breadcrumb-title">
+                    <h2 class="page-title">Sale</h2>
+                </div>
+                <nav class="breadcrumb" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Sale</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
         <div class="content row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2">
             <div class="main-content col col-sm col-md-9 col-lg-9">
                 <div class="text-content-wrapper">
@@ -28,22 +41,22 @@
                     </div>
                 </div>
                 <div class="image-content-wrapper">
-                    <div class="product-header row row-cols-lg-2 row-cols-md-2 row-cols-sm-1 row-cols-1">
+                    <div class="product-header row row-cols-lg-2 row-cols-md-2 row-cols-sm-2 row-cols-1">
                         <form class="ordering col-lg-4 col-md-4" method="get">
                             <select name="orderby" class="orderby" aria-label="Đơn hàng của cửa hàng">
-                                <option value="popularity">Thứ tự theo mức độ phổ biến</option>
-                                <option value="rating">Thứ tự theo điểm đánh giá</option>
+                                <option value="popularity">Phổ biến</option>
+                                <option value="rating">Đánh giá cao</option>
                                 <option value="date" selected="selected">Mới nhất</option>
-                                <option value="price">Thứ tự theo giá: thấp đến cao</option>
-                                <option value="price-desc">Thứ tự theo giá: cao xuống thấp</option>
+                                <option value="price">Giá thấp đến cao</option>
+                                <option value="price-desc">Giá cao xuống thấp</option>
                             </select>
                             <input type="hidden" name="paged" value="1">
                         </form>
-                        <span class="product-now col-lg-5 offset-lg-2 col-md-5 offset-md-2">Có 8 sản phẩm</span>
+                        <span class="product-now col-lg-5 col-md-5">Có 8 sản phẩm</span>
                     </div>
                     <div class="img-content">
                         <div class="row row-cols-1 row-cols-sm-3 row-cols-md-3 row-cols-lg-4">
-                            <div class="img-item item-wrapper col-lg-3 col-md-4 col-sm-4 col-6">
+                            <div class="img-item item-wrapper col-lg-3 col-md-4 col-sm-4 col-xs-12">
                                 <div class="product-img">
                                     <img src="img/Body%20cài%20thẳng.png" width="160px" alt="">
                                     <span class="onsale">Sale</span>
@@ -72,14 +85,14 @@
                                     <span class="price">
                                         <span class="before-sale">20,00$</span>
                                         <span class="current-price">17.5$</span>
-                                        <div class=".clearfix"></div>
+                                        <div class="clearfix"></div>
                                     </span>
                                 </div>
                                 <div class="details">
                                     <span><a href="#">Thông Tin Chi Tiết</a></span>
                                 </div>
                             </div>
-                            <div class="img-item item-wrapper col-lg-3 col-md-4 col-sm-4 col-6">
+                            <div class="img-item item-wrapper col-lg-3 col-md-4 col-sm-4 col-xs-12">
                                 <div class="product-img">
                                     ảnh ở đây
                                 </div>
@@ -90,7 +103,7 @@
                                     giá ở đây
                                 </div>
                             </div>
-                            <div class="img-item item-wrapper col-lg-3 col-md-4 col-sm-4 col-6">
+                            <div class="img-item item-wrapper col-lg-3 col-md-4 col-sm-4 col-xs-12">
                                 <div class="product-img">
                                     ảnh ở đây
                                 </div>
@@ -101,7 +114,7 @@
                                     giá ở đây
                                 </div>
                             </div>
-                            <div class="img-item item-wrapper col-lg-3 col-md-4 col-sm-4 col-6">
+                            <div class="img-item item-wrapper col-lg-3 col-md-4 col-sm-4 col-xs-12">
                                 <div class="product-img">
                                     ảnh ở đây
                                 </div>
@@ -112,7 +125,7 @@
                                     giá ở đây
                                 </div>
                             </div>
-                            <div class="img-item item-wrapper col-lg-3 col-md-4 col-sm-4 col-6">
+                            <div class="img-item item-wrapper col-lg-3 col-md-4 col-sm-4 col-xs-12">
                                 <div class="product-img">
                                     ảnh ở đây
                                 </div>
@@ -123,7 +136,7 @@
                                     giá ở đây
                                 </div>
                             </div>
-                            <div class="img-item item-wrapper col-lg-3 col-md-4 col-sm-4 col-6">
+                            <div class="img-item item-wrapper col-lg-3 col-md-4 col-sm-4 col-xs-12">
                                 <div class="product-img">
                                     ảnh ở đây
                                 </div>
@@ -134,7 +147,7 @@
                                     giá ở đây
                                 </div>
                             </div>
-                            <div class="img-item item-wrapper col-lg-3 col-md-4 col-sm-4 col-6">
+                            <div class="img-item item-wrapper col-lg-3 col-md-4 col-sm-4 col-xs-12">
                                 <div class="product-img">
                                     ảnh ở đây
                                 </div>
@@ -145,7 +158,7 @@
                                     giá ở đây
                                 </div>
                             </div>
-                            <div class="img-item item-wrapper col-lg-3 col-md-4 col-sm-4 col-6">
+                            <div class="img-item item-wrapper col-lg-3 col-md-4 col-sm-4 col-xs-12">
                                 <div class="product-img">
                                     ảnh ở đây
                                 </div>
